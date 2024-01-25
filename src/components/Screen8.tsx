@@ -1,8 +1,8 @@
 import React from "react";
 import Back from "./Back";
-import {Item, setting as data} from ".";
+import {setting as data} from ".";
 import Option from "./Option";
-
+import { ModeToggle } from "./mode-toggle";
 
 const Screen8:React.FC = () => {
   return (
@@ -35,6 +35,11 @@ const Screen8:React.FC = () => {
           })}
         </div>
       </div>
+      <div className="app-container flex justify-center">
+        <ModeToggle />
+
+      </div>
+
     </div>
   );
 };

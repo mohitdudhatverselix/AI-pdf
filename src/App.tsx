@@ -39,7 +39,6 @@ function App({ children }: AppProps) {
   
       <AuthProvider>
       {children}
-      <ModeToggle />
           <Routes>
             <Route path="/" element={<Screen2 />} />
             <Route
