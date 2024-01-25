@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Newsreader:ital,opsz,wght@0,6..72,200;0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;0,6..72,800;1,6..72,200;1,6..72,300;1,6..72,400;1,6..72,500;1,6..72,600;1,6..72,700;1,6..72,800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    body{
+        @apply bg-[#f2f2f2] overflow-x-hidden w-full font-[Inter]
+    }
+    .center{
+        @apply flex items-center justify-evenly;
+    }
+    .s-35{
+        @apply w-[35px] h-[35px];
+    }
+    .ai-title {
+        @apply text-[25px] tracking-[0.5px] leading-[123.529%] font-extrabold text-black font-[Newsreader];      
+    }
+    .app-container {
+        @apply w-[320px] m-auto;
+    }
+    .icon-box{
+        @apply flex items-center justify-evenly w-[35px] h-[35px];
+    }
+    .ai{
+        @apply flex w-full mt-[35px] flex justify-between items-center;
+    }
+    .search{
+        @apply w-full flex py-[12px] px-[15px] pl-[50px] mt-[25px] items-start gap-[15px] rounded-[100px] bg-white border-solid border-white border;
+    }
+    .search-icons{
+        @apply absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none
+    }
+    .more-title{
+        @apply w-full flex py-[20px] px-[15px] mt-[20px] items-center justify-between text-black font-[Inter] text-[12px] font-semibold leading-[22px] tracking-[0.6px] h-[35px] pr-[0px];
+    }
+    .more-title h3{
+        @apply text-black font-[Inter] text-[12px] font-semibold leading-[22px] tracking-[0.6px];
+    }
+    .trending-title{
+        @apply ml-3 text-[#505050] text-[15px] leading-[22px] font-medium;
+    }
+    .trending-option{
+        @apply w-full flex items-center;
+    }
+    .tending-box{
+        @apply flex rounded-[20px] b-[#FFF] w-full h-full flex-shrink-0 flex-wrap items-center justify-evenly px-[10px] py-[5px] flex-col;
+    }
+    .box-title{
+        @apply text-[#505050] text-[12px] leading-[15px] min-h-[22px] font-normal;
+    }
+    .categories-box{
+        @apply flex w-[95px] h-[100px] p-[10px] flex-col justify-between items-start flex-shrink-0 rounded-[20px] bg-white m-[5px];
+    }
+    .categories{
+        @apply flex flex-row flex-wrap;
+    }
+    .trending{
+        @apply bg-white rounded-[20px] h-[100px] flex-shrink-0 flex flex-col justify-evenly items-center pl-[13px] mt-[5px];
+    }
+    .loading-title{
+        @apply inline-block text-[#3F3F3F] mt-24 mb-4 text-5xl font-bold tracking-[0.9px] font-[Newsreader]
+    }
+    .loading-title span{
+        @apply inline-block text-[#FF7D7D] font-[Newsreader] text-[45px] font-bold tracking-[0.9px] leading-[123.529%];
+    }
+    .loading-description{
+        @apply text-black font-[Newsreade] mb-[40px] text-[20px] leading-[123.529%] tracking-[0.4px] font-[500]
+    }
+    .loading-button{
+        @apply flex w-[326px] h-[60px] py-[10px] px-[30px] justify-center items-center gap-2.5 shrink-0 bg-[#E1E1E1] border-[none] rounded-[100px];
+    }
+    .dropdown-box{
+        @apply flex flex-col justify-center mt-[-20px];
+    }
+    .drop-option{
+        @apply flex items-center text-[#505050] text-[12px] leading-[22px] pr-[5px]
+    }
+    .drop-options{
+        @apply bg-white rounded-b-[20px] p-[10px]
+    }
+    .back{
+        @apply flex items-center mt-[40px]
+    }
+    .side-menu{
+        @apply w-[250px] bg-[#505050] flex-shrink-0 backdrop-blur-[7.5px] h-screen flex flex-col items-center;
+    }
+    .lan-option{
+        @apply h-[50px] text-white leading-[50px] ml-10
+    }
+    .option{
+        @apply py-[10px] px-[15px] flex items-center bg-white rounded-[20px] h-[55px] mb-[15px]
+    }
+    .pre-heading{
+        @apply text-[#3F3F3F] w-[171px] mt-5 text-[40px] leading-[123.529%] font-[Newsreader] text-[40px] leading-[123.529%] tracking-[0.8px] font-[600]
+    }
+    .pre-text{
+        @apply text-[#3F3F3F] font-[Inter] text-[15px] font-normal;
+    }
+    .prices{
+        @apply w-full flex justify-evenly mt-[58px] mb-[50px] font-[Inter];
+    }
+    .price{
+        @apply rounded-[15px] w-[112px]  center flex-col justify-end bg-[#C7C7C7]
+    }
+    .price-tag{
+        @apply  bg-[#000000] text-white py-[8px] px-[18px] center w-20 h-[25px] rounded-[20px] text-[12px] mt-[7px]
+    }
+    .total{
+        @apply center flex-col
+    }
+    .price-amount{
+        @apply text-center;
+    }
+    .prevPrice{
+        @apply text-[10px]
+    }
+}
